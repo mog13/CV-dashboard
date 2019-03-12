@@ -1,0 +1,26 @@
+{
+  "events": [
+    {
+      "name": "birth",
+      "time":{"year": 1992,
+        "month": 11},
+      "data": {}
+    },
+    {
+      "name": "SOMETHING ELSE",
+      "time":{"year": 1995,
+        "month": 2},
+      "data": {}
+    },
+    {
+      "name": "graduated",
+      "time": {
+        "year": 2015,
+        "month": 7
+      },
+      "data": {
+        "degree": "ee"
+      }
+    }
+  ]
+}
