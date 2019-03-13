@@ -5,7 +5,7 @@
                    v-on:start="startTimeLine" v-on:stop="stopTimeline"></time-line>
         <div class="container-fluid">
             <div class="row">
-                <module v-for="module in moduleData.modules" :moduleData="module"></module>
+                <module v-for="module in moduleData.modules" :transpiredEvents="transpiredEvents" :moduleData="module"></module>
             </div>
         </div>
 
@@ -35,7 +35,8 @@
         },
         methods: {
             updateTime: function (newTime) {
-                this.currentTime = newTime;
+                //spread operator so we don'taccidentallyy edit time line
+                this.currentTime = {...newTime};
             },
             startTimeLine: function () {
                 this.tick = setInterval(this.tickTimeline, this.tickTime)
@@ -49,6 +50,15 @@
                     this.currentTime.month = 1;
                     this.currentTime.year++;
                 }
+            }
+        },
+        computed: {
+            transpiredEvents: function () {
+                let vm = this;
+                return this.timelineData.events.filter((event) => {
+                    if (event.time.year < vm.currentTime.year) return true;
+                    return event.time.year === vm.currentTime.year && event.time.month <= vm.currentTime.month;
+                });
             }
         }
 
@@ -65,11 +75,11 @@
         margin-top: 60px;
     }
 
-    html body{
+    html body {
         background-color: slategray;
     }
 
-    *{
+    * {
         box-sizing: border-box;
     }
 </style>

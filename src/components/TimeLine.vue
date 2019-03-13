@@ -4,7 +4,7 @@
         <button v-on:click="startTimeline()" :disabled="started">start</button>
         <button v-on:click="stopTimeline()" :disabled="!started">stop</button>
         <div class="blocks">
-            <div class="block" @click="eventClicked(event)" v-for="event in events" :key="event.time.year"> {{event.name}}</div>
+            <div class="block" @click="eventClicked(event)" v-for="event in events" :key="`${event.time.year}${event.time.month}`"> {{event.name}}</div>
         </div>
 
     </div>

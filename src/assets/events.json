@@ -4,7 +4,24 @@
       "name": "birth",
       "time":{"year": 1992,
         "month": 11},
-      "data": {}
+      "data": {
+        "test":"1"
+      }
+    },
+    {
+      "name": "test1",
+      "time":{"year": 1992,
+        "month": 12},
+      "data": {
+        "test":"1"
+      }
+    },{
+      "name": "test2",
+      "time":{"year": 1993,
+        "month": 1},
+      "data": {
+        "test2":5
+      }
     },
     {
       "name": "SOMETHING ELSE",
