@@ -15,6 +15,14 @@
     },
     {
       "name": "test",
+      "type": "donut",
+      "width": "4",
+      "watches": [
+        "test"
+      ]
+    },
+    {
+      "name": "test",
       "type": "text",
       "width": "2",
       "watches": [

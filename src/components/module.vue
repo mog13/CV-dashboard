@@ -4,6 +4,7 @@
             <h1 v-if="moduleData.type === 'text'"> {{(latestEventWithData.name||"N/A")}} </h1>
             <event-log v-else-if="moduleData.type === 'log'" :entries="transpiredEvents"></event-log>
             <graph v-else-if="moduleData.type === 'graph'" :graphData="transpiredEvents"></graph>
+            <donut v-else-if="moduleData.type === 'donut'" :donutData="transpiredEvents"></donut>
             <h1 v-else> im a module {{this.moduleData.name}}</h1>
         </div>
 
@@ -13,9 +14,10 @@
 <script>
     import EventLog from "./modules/eventLog";
     import Graph from "./modules/graph";
+    import Donut from "./modules/donut";
     export default {
         name: "module",
-        components: {Graph, EventLog},
+        components: {Donut, Graph, EventLog},
         props: ["moduleData", "transpiredEvents"],
         computed: {
             colStyle: function () {
