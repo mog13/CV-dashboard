@@ -2,32 +2,40 @@
   "modules": [
     {
       "name": "event Log",
-      "type": "event",
+      "type": "log",
       "width": "6",
-      "watches":["test"]
-    },
-    {
-      "name": "test",
-      "type": "text",
-      "width": "2",
-      "watches":["test"]
-    },
-    {
-      "name": "test",
-      "type": "text",
-      "width": "2",
-      "watches":["test2"]
-    },
-    {
-      "name": "test",
-      "type": "text",
-      "width": "2",
-      "watches":["test"]
+      "watches": [
+        "test"
+      ]
     },
     {
       "name": "skills",
       "type": "graph",
       "width": "6"
+    },
+    {
+      "name": "test",
+      "type": "text",
+      "width": "2",
+      "watches": [
+        "test"
+      ]
+    },
+    {
+      "name": "test",
+      "type": "text",
+      "width": "2",
+      "watches": [
+        "test2"
+      ]
+    },
+    {
+      "name": "test",
+      "type": "text",
+      "width": "2",
+      "watches": [
+        "test"
+      ]
     }
   ]
 }

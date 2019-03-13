@@ -1,7 +1,8 @@
 <template>
     <div class="module-container" :class="[colStyle]">
         <div class="module">
-            <h1 v-if="moduleData.type === 'text'"> {{latestEventWithData.name}} </h1>
+            <h1 v-if="moduleData.type === 'text'"> {{(latestEventWithData.name||"N/A")}} </h1>
+            <event-log v-else-if="moduleData.type === 'log'" :entries="transpiredEvents"></event-log>
             <h1 v-else> im a module {{this.moduleData.name}}</h1>
         </div>
 
@@ -9,8 +10,10 @@
 </template>
 
 <script>
+    import EventLog from "./modules/eventLog";
     export default {
         name: "module",
+        components: {EventLog},
         props: ["moduleData", "transpiredEvents"],
         computed: {
             colStyle: function () {

@@ -5,7 +5,8 @@
       "time":{"year": 1992,
         "month": 11},
       "data": {
-        "test":"1"
+        "test":"1",
+        "logs":["its works", "i was born"]
       }
     },
     {
