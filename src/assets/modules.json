@@ -3,10 +3,7 @@
     {
       "name": "event Log",
       "type": "log",
-      "width": "6",
-      "watches": [
-        "test"
-      ]
+      "width": "6"
     },
     {
       "name": "skills",
@@ -16,34 +13,22 @@
     {
       "name": "test",
       "type": "donut",
-      "width": "4",
-      "watches": [
-        "test"
-      ]
+      "width": "4"
+    },
+    {
+      "name": "test",
+      "type": "lights",
+      "width": "2"
     },
     {
       "name": "test",
       "type": "text",
-      "width": "2",
-      "watches": [
-        "test"
-      ]
+      "width": "2"
     },
     {
       "name": "test",
       "type": "text",
-      "width": "2",
-      "watches": [
-        "test2"
-      ]
-    },
-    {
-      "name": "test",
-      "type": "text",
-      "width": "2",
-      "watches": [
-        "test"
-      ]
+      "width": "2"
     }
   ]
 }
