@@ -1,0 +1,29 @@
+{
+  "modules": [
+    {
+      "name": "event Log",
+      "type": "event",
+      "width": "6"
+    },
+    {
+      "name": "test",
+      "type": "text",
+      "width": "2"
+    },
+    {
+      "name": "test",
+      "type": "text",
+      "width": "2"
+    },
+    {
+      "name": "test",
+      "type": "text",
+      "width": "2"
+    },
+    {
+      "name": "skills",
+      "type": "graph",
+      "width": "6"
+    }
+  ]
+}
