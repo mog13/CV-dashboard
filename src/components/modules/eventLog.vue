@@ -22,8 +22,8 @@
     .log-container{
         height:400px;
         display: flex;
-        justify-content: center; /* center items vertically, in this case */
-        align-items: center;     /* center items horizontally, in this case */
+        justify-content: center;
+        align-items: center;
     }
     .log{
         height:80%;

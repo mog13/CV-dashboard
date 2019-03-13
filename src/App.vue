@@ -8,7 +8,6 @@
                 <module v-for="module in moduleData.modules" :transpiredEvents="transpiredEvents" :moduleData="module"></module>
             </div>
         </div>
-
     </div>
 </template>
 
