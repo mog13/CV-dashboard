@@ -2,12 +2,12 @@
     <div class="module-container" :class="[colStyle]">
         <div class="module">
             <h1 class="title">{{moduleData.name}}</h1>
-            <h1 v-if="moduleData.type === 'text'"> {{(latestEvent.name||"N/A")}} </h1>
-            <event-log v-else-if="moduleData.type === 'log'" :entries="transpiredEvents"></event-log>
+            <event-log v-if="moduleData.type === 'log'" :entries="transpiredEvents"></event-log>
             <graph v-else-if="moduleData.type === 'graph'" :graphData="transpiredEvents"></graph>
             <donut v-else-if="moduleData.type === 'donut'" :donutData="transpiredEvents"></donut>
             <lights v-else-if="moduleData.type ==='lights'" :data="transpiredEvents" :vals="lightTargets"></lights>
             <links v-else-if="moduleData.type === 'links'" :links="moduleData.data.links"></links>
+            <cv v-else-if="moduleData.type === 'cv'" :events="transpiredEvents"></cv>
             <h1 v-else> im a module {{this.moduleData.name}}</h1>
         </div>
 
@@ -20,10 +20,11 @@
     import Donut from "./modules/donut";
     import Lights from "./modules/lights";
     import Links from "./modules/links";
+    import Cv from "./modules/cv";
 
     export default {
         name: "module",
-        components: {Links, Lights, Donut, Graph, EventLog},
+        components: {Cv, Links, Lights, Donut, Graph, EventLog},
         props: ["moduleData", "transpiredEvents"],
         data:()=>{
             return {
