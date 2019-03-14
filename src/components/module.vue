@@ -63,6 +63,8 @@
             background-color: $module-dark;
             margin: 10px;
             box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.25);
+            @media(min-width:992px){ min-height:420px;}
+
             .title{
                 color:$module-dark;
                 font-weight: bold;

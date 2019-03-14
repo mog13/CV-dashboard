@@ -2,7 +2,7 @@
     <div class="log-container">
         <div class="log">
             <div class="entry-container" v-for="entry in entries">
-                <div class="entry header"> {{entry.name}} <span class="date"> - {{dateToString(entry.time)}}</span></div>
+                <div class="entry header"> <span class="name">{{entry.name}}</span> <span class="date"> - {{dateToString(entry.time)}}</span></div>
                 <div class="entry" v-for="log in entry.data.logs">{{log}} </div>
             </div>
         </div>
@@ -57,11 +57,14 @@
                 &.header{
                     padding-left:10px;
                     font-weight: bold;
-                    text-decoration: underline;
 
                     .date{
                         font-weight: normal;
                         font-size: 0.8rem;
+                    }
+
+                    .name{
+                        text-decoration: underline;
                     }
                 }
             }

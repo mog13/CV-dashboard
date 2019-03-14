@@ -21,7 +21,7 @@
     @import "../../scss/colours";
 
     .link-container {
-     padding-top:20px;
+     padding-top:10px;
         .link {
             padding-bottom:20px;
             .title {
