@@ -31,13 +31,15 @@
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../../scss/_colours.scss";
     .graphContainer {
         height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
         .graphSize {
-            background-color: white;
+            background-color: $module-light;
 
         }
     }

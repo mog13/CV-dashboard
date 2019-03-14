@@ -3,7 +3,7 @@
 
         <time-line :events="timelineData.events" :current="currentTime" v-on:timeChanged="updateTime"
                    v-on:start="startTimeLine" v-on:stop="stopTimeline"></time-line>
-        <div class="container-fluid">
+        <div class="container-fluid modules">
             <div class="row">
                 <module v-for="module in moduleData.modules" :transpiredEvents="transpiredEvents" :moduleData="module"></module>
             </div>
@@ -64,21 +64,27 @@
     }
 </script>
 
-<style>
+<style lang="scss">
+
+    @import "./scss/_colours.scss";
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
+
+    }
+    .modules{
+        margin-top:100px;
     }
 
     html body {
-        background-color: slategray;
+        background-color: $back-light;
     }
 
     * {
         box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
     }
 </style>

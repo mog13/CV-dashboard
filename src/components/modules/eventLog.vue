@@ -19,6 +19,8 @@
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../../scss/_colours.scss";
     .log-container{
         height:400px;
         display: flex;
@@ -28,6 +30,6 @@
     .log{
         height:80%;
         width: 80%;
-        background-color:white;
+        background-color: $module-light;
     }
 </style>

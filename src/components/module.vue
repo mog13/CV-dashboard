@@ -45,11 +45,14 @@
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../scss/_colours.scss";
     .module-container {
 
         .module {
-            background-color: slateblue;
+            background-color: $module-dark;
             margin: 10px;
+            box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
         }
 
     }

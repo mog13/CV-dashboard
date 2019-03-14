@@ -32,11 +32,13 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../../scss/_colours.scss";
     .lightContainer {
         display:flex;
         flex-direction: column;
 
         .light{
+            color:$module-accent;
             opacity: 0.2;
             &.lit{
                 opacity: 1;

@@ -31,6 +31,7 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../../scss/_colours.scss";
     .graphContainer {
         height: 400px;
         display: flex;
@@ -39,7 +40,7 @@
         position: relative;
         .graphOuter {
             position:absolute;
-            background-color: white;
+            background-color: $module-light;
             width: 90%;
             height: 90%;
         }
