@@ -1,7 +1,7 @@
 <template>
     <div class="graphContainer">
         <div class="graphOuter">     </div>
-            <donut-chart class="donut" id="donut" :data="proccesedData"  colors='[ "#FF6384", "#36A2EB", "#FFCE56" ]' resize="true" ></donut-chart>
+            <donut-chart class="donut" id="donut" :data="proccesedData" :colors="colours" resize="true" ></donut-chart>
 
     </div>
 </template>
@@ -16,7 +16,9 @@
         },
         props: ["donutData"],
         data: () => {
-            return {}
+            return {
+                colours:["#6da049","#3aa056","#75a060"]
+            }
         },
         computed: {
             proccesedData: function () {

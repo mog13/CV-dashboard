@@ -39,7 +39,10 @@
 
         .light{
             color:$module-accent;
-            opacity: 0.2;
+            opacity: 0.1;
+            font-weight: bold;
+            padding:10px;
+            font-size: 2rem;
             &.lit{
                 opacity: 1;
             }

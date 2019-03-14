@@ -1,7 +1,7 @@
 <template>
     <div class="graphContainer">
         <div class="graphSize">
-            <line-chart class="graph" id="line" :data="proccesedData" :xkey="'date'" :ykeys="['test','test2']"></line-chart>
+            <line-chart class="graph" id="line" :data="proccesedData"  :xkey="'date'" :ykeys="['test','test2']" resize="true"></line-chart>
         </div>
     </div>
 </template>
