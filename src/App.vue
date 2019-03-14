@@ -81,6 +81,7 @@
 
     html body {
         background-color: $back-light;
+        overflow-x: hidden;
     }
 
     * {

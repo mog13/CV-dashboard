@@ -33,7 +33,13 @@
     {
       "name": "links",
       "type": "links",
-      "width": "2"
+      "width": "2",
+      "data":{
+        "links":[{
+          "name":"Github","content":"github.com/mog13"
+        },
+          {"name":"codepen","content":"codepen.com/mog13"}]
+      }
     }
   ]
 }

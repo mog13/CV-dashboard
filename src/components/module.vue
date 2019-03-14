@@ -7,6 +7,7 @@
             <graph v-else-if="moduleData.type === 'graph'" :graphData="transpiredEvents"></graph>
             <donut v-else-if="moduleData.type === 'donut'" :donutData="transpiredEvents"></donut>
             <lights v-else-if="moduleData.type ==='lights'" :data="transpiredEvents" :vals="lightTargets"></lights>
+            <links v-else-if="moduleData.type === 'links'" :links="moduleData.data.links"></links>
             <h1 v-else> im a module {{this.moduleData.name}}</h1>
         </div>
 
@@ -18,10 +19,11 @@
     import Graph from "./modules/graph";
     import Donut from "./modules/donut";
     import Lights from "./modules/lights";
+    import Links from "./modules/links";
 
     export default {
         name: "module",
-        components: {Lights, Donut, Graph, EventLog},
+        components: {Links, Lights, Donut, Graph, EventLog},
         props: ["moduleData", "transpiredEvents"],
         data:()=>{
             return {
