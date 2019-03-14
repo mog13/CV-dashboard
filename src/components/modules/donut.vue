@@ -2,16 +2,18 @@
     <div class="graphContainer">
         <div class="graphOuter">     </div>
             <donut-chart class="donut" id="donut" :data="proccesedData" :colors="colours" resize="true" ></donut-chart>
-
+            <no-data v-if="proccesedData.length ===0"></no-data>
     </div>
 </template>
 
 <script>
     import {DonutChart } from 'vue-morris'
+    import NoData from "../noData";
 
     export default {
         name: "donut",
         components: {
+            NoData,
             DonutChart
         },
         props: ["donutData"],

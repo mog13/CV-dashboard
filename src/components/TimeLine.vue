@@ -12,6 +12,8 @@
         <div class="time-container">
             <div class="time-panel">
                 <h2>{{this.getMonthDisplay(this.current.month)}} {{this.current.year}}</h2>
+                <h3 class="event" v-if="currentEvents.length >0">({{currentEvents[0].name}})</h3>
+                <h3 class="event" v-else>-</h3>
             </div>
             <div class="controls" @click="toggleTimeline()">
                 <!--<button v-on:click="startTimeline()" :disabled="started">start</button>-->
@@ -35,14 +37,6 @@
             eventClicked: function (e) {
                 this.$emit('timeChanged', e.time)
             },
-            startTimeline: function () {
-                this.started = true;
-                this.$emit('start')
-            },
-            stopTimeline: function () {
-                this.started = false;
-                this.$emit('stop')
-            },
             toggleTimeline:function(){
               this.started = !this.started;
               this.$emit(this.started?'start':'stop')
@@ -57,6 +51,14 @@
                 if (event.time.year < this.current.year) return true;
                 return event.time.year === this.current.year && event.time.month <= this.current.month;
             }
+        },
+        computed:{
+            currentEvents:function() {
+                let vm = this;
+                return this.events.filter(e=>{
+                    return e.time.year === vm.current.year && e.time.month === vm.current.month;
+                })
+            }
         }
     }
 </script>
@@ -65,6 +67,7 @@
     @import "../scss/colours";
 
     .timeline {
+
         position: fixed;
         width:100%;
         overflow-x: hidden;
@@ -81,6 +84,7 @@
                 margin: 5px;
                 flex: 1;
                 position: relative;
+                transition: all 0.5s ease;
                 opacity:0.4;
 
                 &.lit{
@@ -105,6 +109,13 @@
                     color:$module-accent;
                     font-weight: bold;
                     text-transform: uppercase;
+                    padding-bottom:0;
+                    margin-bottom: 0;
+                }
+                .event{
+                    color:$module-accent;
+                    font-weight: bold;
+                    font-size: 0.8rem;
                 }
             }
             .controls {

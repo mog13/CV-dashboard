@@ -43,6 +43,7 @@
             font-weight: bold;
             padding:10px;
             font-size: 2rem;
+            transition: all 0.2s linear;
             &.lit{
                 opacity: 1;
             }

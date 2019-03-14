@@ -1,19 +1,23 @@
 <template>
     <div class="log-container">
         <div class="log">
-            <div class="entry-container" v-for="entry in entries">
+            <transition-group name="slide-fade" style="width: 100%">
+            <div class="entry-container" v-for="entry in entries" :key="entry">
                 <div class="entry header"> <span class="name">{{entry.name}}</span> <span class="date"> - {{dateToString(entry.time)}}</span></div>
-                <div class="entry" v-for="log in entry.data.logs">{{log}} </div>
+                <div class="entry" v-for="log in entry.data.logs" :key="log">{{log}} </div>
             </div>
+            </transition-group>
         </div>
-
+    <no-data v-if="entries.length ===0"></no-data>
 
     </div>
 </template>
 
 <script>
+    import NoData from "../noData";
     export default {
         name: "eventLog",
+        components: {NoData},
         props:["entries"],
         methods:{
             dateToString(time){
@@ -46,6 +50,7 @@
         justify-content: flex-start;
         flex-direction: column;
         overflow-y: scroll;
+        overflow-x: hidden;
         .entry-container{
             text-align: start;
             width:100%;
@@ -73,6 +78,17 @@
             }
 
         }
+    }
 
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+    .slide-fade-leave-active {
+        transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-enter, .slide-fade-leave-to
+        /* .slide-fade-leave-active below version 2.1.8 */ {
+        transform: translateX(10px);
+        opacity: 0;
     }
 </style>

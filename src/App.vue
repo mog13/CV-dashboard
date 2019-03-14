@@ -34,11 +34,11 @@
         },
         methods: {
             updateTime: function (newTime) {
-                //spread operator so we don'taccidentallyy edit time line
+                //spread operator so we don't accidentallyy edit time line
                 this.currentTime = {...newTime};
             },
             startTimeLine: function () {
-                this.tick = setInterval(this.tickTimeline, this.tickTime)
+                this.tick = setTimeout(this.tickTimeline, this.getNextTickTime())
             },
             stopTimeline: function () {
                 if (this.tick) clearInterval(this.tick)
@@ -49,6 +49,16 @@
                     this.currentTime.month = 1;
                     this.currentTime.year++;
                 }
+                this.tick = setTimeout(this.tickTimeline,this.getNextTickTime());
+            },
+
+            getNextTickTime:function () {
+                let vm = this;
+                let next = this.timelineData.events.filter(e=>{
+                    return e.time.year === vm.currentTime.year && e.time.month === vm.currentTime.month;
+                })
+                return next.length >0? 2000:200;
+
             }
         },
         computed: {

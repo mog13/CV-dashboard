@@ -1,15 +1,20 @@
 <template>
     <div class="cv-container">
-        <div class="event" v-for="event in cvEvents">
+        <transition-group name="fade">
+        <div class="event" v-for="event in cvEvents" :key="event">
         <h1 class="title"> {{event.data.cv.header}}</h1>
-            <p class="entry" v-for="text in event.data.cv.text">{{text}}</p>
+            <p class="entry" v-for="text in event.data.cv.text" :key="text">{{text}}</p>
         </div>
+        </transition-group>
+        <no-data v-if="cvEvents.length ===0" :light="true"></no-data>
     </div>
 </template>
 
 <script>
+    import NoData from "../noData";
     export default {
         name: "cv",
+        components: {NoData},
         props:["events"],
         computed:{
             cvEvents:function () {
@@ -38,6 +43,13 @@
 
     .entry {
         color:lighten($module-accent,50%)
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
     }
 }
 </style>
