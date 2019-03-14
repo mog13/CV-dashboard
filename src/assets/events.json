@@ -4,6 +4,7 @@
       "name": "birth",
       "time":{"year": 1992,
         "month": 11},
+      "icon":"fa-birthday-cake",
       "data": {
         "test":"1",
         "logs":["its works", "i was born"],

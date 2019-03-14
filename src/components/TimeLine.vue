@@ -6,7 +6,7 @@
             <div class="block" :class="{ lit: hasTranspired(event)}"
                  @click="eventClicked(event)" v-for="event in events"
                  :key="`${event.time.year}${event.time.month}`">
-                <i class="icon fas fa-birthday-cake"></i>
+                <i class="icon fas " :class="[event.icon? event.icon:'fa-question-circle']"></i>
             </div>
         </div>
         <div class="time-container">
@@ -15,7 +15,7 @@
             </div>
             <div class="controls" @click="toggleTimeline()">
                 <!--<button v-on:click="startTimeline()" :disabled="started">start</button>-->
-                <i class="icon fas"  v-bind:class="[started? 'fa-pause':'fa-play']"></i>
+                <i class="icon fas"  :class="[started? 'fa-pause':'fa-play']"></i>
             </div>
         </div>
 
