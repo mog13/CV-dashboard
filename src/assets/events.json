@@ -16,6 +16,7 @@
         "month": 12},
       "data": {
         "test":"1",
+        "logs":["this is a test","and another one"],
         "graphTest":2
       }
     },{

@@ -1,6 +1,7 @@
 <template>
     <div class="module-container" :class="[colStyle]">
         <div class="module">
+            <h1 class="title">{{moduleData.name}}</h1>
             <h1 v-if="moduleData.type === 'text'"> {{(latestEvent.name||"N/A")}} </h1>
             <event-log v-else-if="moduleData.type === 'log'" :entries="transpiredEvents"></event-log>
             <graph v-else-if="moduleData.type === 'graph'" :graphData="transpiredEvents"></graph>
@@ -50,9 +51,26 @@
     .module-container {
 
         .module {
+            position:relative;
             background-color: $module-dark;
             margin: 10px;
-            box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.25);
+            .title{
+                color:$module-dark;
+                font-weight: bold;
+                left:0.4rem;
+                text-align: start;
+                padding-left:10px;
+                padding-top:5px;
+                padding-bottom:5px;
+                font-size: 1rem;
+                margin:0;
+                top:0.2rem;
+                text-transform: uppercase;
+                text-decoration: underline;
+                background-color: $module-accent;
+            }
+
         }
 
     }

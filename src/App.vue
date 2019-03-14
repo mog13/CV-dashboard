@@ -87,4 +87,21 @@
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $module-accent;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: darken($module-accent,10%);
+    }
+
 </style>
