@@ -29,7 +29,7 @@
                 moduleData,
                 currentTime: {year: 1992, month: 1},
                 tick: null,
-                tickTime: 1000
+                tickTime: 200
             }
         },
         methods: {
@@ -56,9 +56,13 @@
                 let vm = this;
                 let next = this.timelineData.events.filter(e=>{
                     return e.time.year === vm.currentTime.year && e.time.month === vm.currentTime.month;
-                })
-                return next.length >0? 2000:200;
-
+                });
+                if(next.length>0){
+                    this.tickTime = 200;
+                    return 2000;
+                }
+                if(this.tickTime>20) this.tickTime -=10;
+                return this.tickTime;
             }
         },
         computed: {
