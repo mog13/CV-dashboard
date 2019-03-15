@@ -76,6 +76,11 @@
             background-color: $back-dark;
             display: flex;
             width: 100%;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                width: 10px;
+                display:none;
+            }
 
             .block {
                 background-color: $module-accent;
@@ -85,7 +90,7 @@
                 position: relative;
                 transition: all 0.5s ease;
                 opacity:0.4;
-
+                min-width:40px;
                 &.lit{
                     opacity: 1;
                 }
