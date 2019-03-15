@@ -23,10 +23,10 @@
         },
         computed: {
             proccesedData: function () {
-                return this.graphData.map(data => {
+                return this.graphData.filter(d=>{return d.data.js || d.data.csharp}).map(data => {
                     return {date: `${data.time.year}.${data.time.month}`,
-                        test: data.data.graphTest,
-                    test2:data.data.test2}
+                        csharp: data.data.graphTest,
+                        js:data.data.test2}
                 })
             }
         }

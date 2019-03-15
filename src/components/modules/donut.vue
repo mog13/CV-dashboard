@@ -1,7 +1,7 @@
 <template>
     <div class="graphContainer">
         <div class="graphOuter">     </div>
-            <donut-chart class="donut" id="donut" :data="proccesedData" :colors="colours" resize="true" ></donut-chart>
+            <donut-chart class="donut" id="donut" :data="proccesedData" :formatter="addMonths" :colors="colours" resize="true" ></donut-chart>
             <no-data v-if="proccesedData.length ===0"></no-data>
     </div>
 </template>
@@ -22,11 +22,14 @@
                 colours:["#6da049","#3aa056","#75a060"]
             }
         },
+        methods:{
+            addMonths:function(y){return y + " Months" }
+        },
         computed: {
             proccesedData: function () {
-                return this.donutData.map(data => {
-                    return {label: `${data.time.year}.${data.time.month}`,
-                        value: data.data.graphTest,
+                return this.donutData.filter(d=>{console.log(d.data);return d.data.experience !== undefined }).map(data => {
+                    return {label: data.data.experience.name,
+                        value: data.data.experience.months,
                         }
                 })
             }

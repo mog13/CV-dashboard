@@ -30,7 +30,9 @@
         "cv":{
           "header":"GCSE's",
           "text":["2A* 7A 2B"]
-        }
+        },
+        "js":1,
+        "csharp":1
       }
     },
     {
@@ -72,7 +74,8 @@
       "data": {
         "logs": [
           "AS levels in Economics, Physics, Maths and Computing"
-        ]
+        ],
+        "csharp":2
       }
     },
     {
@@ -84,7 +87,8 @@
       "data": {
         "logs": [
           "Created a company to develop apps, games and experiences"
-        ]
+        ],
+        "csharp":4
       }
     },
     {
@@ -102,7 +106,9 @@
         "cv":{
           "header":"A levels",
           "text":["A B B in Computing, Physics and Math"]
-        }
+        },
+        "csharp":5,
+        "js":2
       }
     },
     {
@@ -168,6 +174,10 @@
       "cv":{
         "header":"Work expirience",
         "text":["A total of 6 months industry experience over a wide variety of technologies"]
+      },
+      "experience":{
+        "name":"Parker",
+        "months":6
       }
     },
     {
@@ -215,6 +225,10 @@
         "cv":{
           "header":"Grapeshot",
           "text":["July 2015 - June 2016","Working as part of the apps team I created and maintained front-end interfaces for a wide variety of internal and external clients. Using continuous integration and test driven development, changes could be introduced to the live product in a confident and safe way. After eight months I was given the position of technical lead on the admin dashboard project; responsible for digesting management specifications and input and organising colleagues from several teams to collaborate efficiently."]
+        },
+        "experience":{
+          "name":"Grapeshot",
+          "months":11
         }
       }
     },
@@ -237,6 +251,10 @@
         "cv":{
           "header":"White Clarke Group",
           "text":["July 2016 - April 2018","In part of a multi-disciplined team, I worked on creating new features and upgrading software to AngularJS. By learning Java I was able to fully own features from start to finish. Utilizing Webpack I implemented a single click front end build process including automatic unit test coverage reports, e2e testing and hot reloading."]
+        },
+        "experience":{
+          "name":"WCG",
+          "months":21
         }
       }
     },
@@ -253,6 +271,10 @@
         "cv":{
           "header":"Charity",
           "text":["I helped co-ordinate, organize, produce and distribute monthly care packages to help the homeless in Miton Keyens"]
+        },
+        "experience":{
+          "name":"Charity",
+          "months":12
         }
       }
     },
@@ -275,6 +297,10 @@
         "cv":{
           "header":"White Clarke Group -innovation lab",
           "text":["April 2018 - February 2019","As the sole representative of the innovation lab I created software to demonstrate and explore new technologies. From VR to AI i had to assess a technology, build a proof of concept, prove a business case and present to clients. I represented the company giving talks to over 400 members of the the IAFN and FLA"]
+        },
+        "experience":{
+          "name":"Innovation labs",
+          "months":10
         }
       }
     }
