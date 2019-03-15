@@ -4,7 +4,7 @@
     <div class="intro-container">
         <div><h1 class="title">Welcome</h1></div>
         <div><p class="explanation">This app will take you through key events of my life monitoring skill, qualifications and achievements.</p></div>
-        <div><p class="explanation">It was created over a few days to be a practical demonstration and hopefully a novel and interesting experience</p></div>
+        <div><p class="explanation">It was created over a few days to be a practical demonstration and hopefully a novel and interesting experience. Unfortunatly </p></div>
         <div><p class="explanation">Once you've clicked start the timeline will automatically move and slow down for important dates. You can skip to specific events using the timeline at the top.</p></div>
         <div><p class="explanation">All data is as accurate as possible (some months etc may be off). There are some spelling mistakes, in a production situation these would be caught by QA!</p></div>
         <div><p class="explanation">It is written in Vue and is open source. MorrisJS is used for any graphing. I hope you enjoy :)</p></div>
