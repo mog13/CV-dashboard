@@ -16,12 +16,12 @@
       "width": "4"
     },
     {
-      "name": "test",
+      "name": "qualifications",
       "type": "lights",
       "width": "2"
     },
     {
-      "name": "test",
+      "name": "CV",
       "type": "cv",
       "width": "4"
     },

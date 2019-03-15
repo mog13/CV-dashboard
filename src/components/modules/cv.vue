@@ -33,16 +33,18 @@
     text-align: start;
     padding-left: 20px;
     padding-top: 10px;
-
+    max-height:400px;
+    overflow-y: scroll;
     .title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight:bold;
         text-decoration: underline;
         color:$module-accent;
     }
 
     .entry {
-        color:lighten($module-accent,50%)
+        color:lighten($module-accent,50%);
+        font-size: 0.8rem;
     }
 
     .fade-enter-active, .fade-leave-active {
