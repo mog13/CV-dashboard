@@ -2,64 +2,225 @@
   "events": [
     {
       "name": "birth",
-      "time":{"year": 1992,
-        "month": 11},
-      "icon":"fa-birthday-cake",
-      "data": {
-        "test":"1",
-        "logs":["its works", "i was born"],
-        "graphTest":1
-      }
-    },
-    {
-      "name": "test1",
-      "time":{"year": 1992,
-        "month": 12},
-      "data": {
-        "test":"1",
-        "logs":["this is a test","and another one"],
-        "graphTest":2
-      }
-    },{
-      "name": "test2",
-      "time":{"year": 1993,
-        "month": 1},
-      "data": {
-        "test2":5,
-        "graphTest":3
-      }
+      "time": {
+        "year": 1992,
+        "month": 11
+      },
+      "icon": "fa-birthday-cake",
+      "data": {}
     },
     {
       "name": "GCSE",
-      "time":{"year": 1993,
-        "month": 5},
+      "time": {
+        "year": 2009,
+        "month": 10
+      },
       "data": {
-        "test2":5,
-        "graphTest":8,
-        "qualification":"GCSE",
-        "cv":{
-          "header":"GCSE's",
-          "text":["achieved some"]
-        }
+        "logs": [
+          "2 at A*",
+          "7 at A",
+          "2 at B"
+        ]
       }
     },
     {
-      "name": "SOMETHING ELSE",
-      "time":{"year": 1995,
-        "month": 2},
+      "name": "C&G Level 1",
+      "time": {
+        "year": 2010,
+        "month": 3
+      },
       "data": {
-      "graphTest":4}
+        "logs": [
+          "achieved distinction in 'Systems support - PC Maintenance'"
+        ]
+      }
     },
     {
-      "name": "graduated",
+      "name": "C&G Level 2",
+      "time": {
+        "year": 2010,
+        "month": 7
+      },
+      "data": {
+        "logs": [
+          "achieved a diploma with distinction in 'ICT Systems Support'"
+        ]
+      }
+    },
+    {
+      "name": "AS levels",
+      "time": {
+        "year": 2010,
+        "month": 9
+      },
+      "data": {
+        "logs": [
+          "AS levels in Economics, Physics, Maths and Computing"
+        ]
+      }
+    },
+    {
+      "name": "Founded Drunken Pixel",
+      "time": {
+        "year": 2010,
+        "month": 11
+      },
+      "data": {
+        "logs": [
+          "Created a company to develop apps, games and experiences"
+        ]
+      }
+    },
+    {
+      "name": "A levels",
+      "time": {
+        "year": 2011,
+        "month": 7
+      },
+      "data": {
+        "logs": [
+          "Achieved A in Maths",
+          "Achieved B's in Computing and Physics"
+        ]
+      }
+    },
+    {
+      "name": "Awarded university Sponsorship from Parker",
+      "time": {
+        "year": 2011,
+        "month": 8
+      },
+      "data": {
+      }
+    },
+    {
+      "name": "Joined Nottingham University",
+      "time": {
+        "year": 2011,
+        "month": 9
+      },
+      "data": {
+        "logs": [
+          "Enrolled on Electronic and Electric Engineering"
+        ]
+      }
+    },
+    {
+      "name": "Parker Work experience",
+      "time": {
+        "year": 2012,
+        "month": 6
+      },
+      "data": {
+        "logs": [
+          "Several placements in different areas to help understand the industry, company and technology"
+        ]
+      }
+    },
+    {
+      "name": "Parker Work experience",
+      "time": {
+        "year": 2013,
+        "month": 6
+      },
+      "data": {
+        "logs": [
+          "industrial communications project between integrated circuit and computer"
+        ]
+      }
+    },
+    {
+      "name": "Parker Work experience",
+      "time": {
+        "year": 2014,
+        "month": 6
+      },
+      "data": {
+        "logs": [
+          "Innovation projects to asses new technology",
+          "Setup wizard using AR and test to speech",
+          "text alerts",
+          "web app dashboard and graphing for drives",
+          "presented projects to management and the board"
+        ]
+      }
+    },
+    {
+      "name": "mEng",
+      "time": {
+        "year": 2015,
+        "month": 5
+      },
+      "data": {
+        "logs": [
+          "Awarded a first class degree in Electronic and computer technology"
+        ]
+      }
+    },
+    {
+      "name": "Parker Work experience",
+      "time": {
+        "year": 2015,
+        "month": 6
+      },
+      "data": {
+        "logs": [
+          "Several placements in different areas to help understand the industry, company and technology"
+        ]
+      }
+    },
+    {
+      "name": "Joined Grapeshot",
       "time": {
         "year": 2015,
         "month": 7
       },
       "data": {
-        "degree": "ee",
-        "graphTest":6
+        "logs": [
+          "Joined grapeshot as a frontend developer working in Angular",
+          "introduced protractor for end to end automated testing",
+          "updated build tools from Grunt to Gulp",
+          "Made tech lead for new admin dashboard project"
+        ]
+      }
+    },
+    {
+      "name": "Joined WCG",
+      "time": {
+        "year": 2016,
+        "month": 7
+      },
+      "data": {
+        "logs": [
+          "Joined WCG as a frontend developer working in Angular",
+          "moved build tools to webpack",
+          "updated entire codebase to Angular 2",
+          "created one click build and serve pipeline",
+          "moved to Jest testing framework",
+          "created test coverage reports",
+          "created a 'Social Hackers' group for staff to share projects they were making"
+        ]
+      }
+    },
+    {
+      "name": "started innovation lab",
+      "time": {
+        "year": 2018,
+        "month": 4
+      },
+      "data": {
+        "logs": [
+          "Created a VR delaership in Unity",
+          "Worked internally on roadmap and tools (API etc)",
+          "created Tinder for cars",
+          "Created a chatbot design program: 'flow'",
+          "represented company internally in company conference demonstrating innovation",
+          "Gave a talk on AI to over 400 memebers of the IAFN",
+          "Asked to present talk again to FLA representatives"
+        ]
       }
     }
+
+
   ]
 }

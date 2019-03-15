@@ -31,9 +31,10 @@
       "width": "2",
       "data":{
         "links":[
+          {"name":"Source","href":"http://github.com/mog13"},
           {"name":"Github","href":"http://github.com/mog13"},
-          {"name":"codepen","href":"http://codepen.com/mog13"},
-          {"name":"email","href":"mailto:MorganSpencerOwen@outlook.com"},
+          {"name":"Codepen","href":"http://codepen.com/mog13"},
+          {"name":"Email","href":"mailto:MorganSpencerOwen@outlook.com"},
           {"name":"phone","content":"01234 567890"}]
       }
     }
