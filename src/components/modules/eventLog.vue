@@ -2,7 +2,7 @@
     <div class="log-container">
         <div class="log">
             <transition-group name="slide-fade" style="width: 100%">
-            <div class="entry-container" v-for="entry in entries" :key="entry">
+            <div class="entry-container" v-for="entry in reversedEntried" :key="entry">
                 <div class="entry header"> <span class="name">{{entry.name}}</span> <span class="date"> - {{dateToString(entry.time)}}</span></div>
                 <div class="entry" v-for="log in entry.data.logs" :key="log">{{log}} </div>
             </div>
@@ -25,6 +25,11 @@
                     "July", "August", "September", "October", "November", "December"
                 ];
                 return(`${monthNames[time.month-1]} ${time.year}` );
+            }
+        },
+        computed: {
+            reversedEntried: function () {
+                return this.entries.slice().reverse()
             }
         }
     }
