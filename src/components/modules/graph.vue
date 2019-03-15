@@ -25,8 +25,8 @@
             proccesedData: function () {
                 return this.graphData.filter(d=>{return d.data.js || d.data.csharp}).map(data => {
                     return {date: `${data.time.year}.${data.time.month}`,
-                        csharp: data.data.graphTest,
-                        js:data.data.test2}
+                        csharp: data.data.csharp,
+                        js:data.data.js}
                 })
             }
         }

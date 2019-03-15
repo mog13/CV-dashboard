@@ -27,7 +27,7 @@
         },
         computed: {
             proccesedData: function () {
-                return this.donutData.filter(d=>{console.log(d.data);return d.data.experience !== undefined }).map(data => {
+                return this.donutData.filter(d=>{return d.data.experience !== undefined }).map(data => {
                     return {label: data.data.experience.name,
                         value: data.data.experience.months,
                         }

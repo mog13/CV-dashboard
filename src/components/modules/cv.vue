@@ -1,7 +1,7 @@
 <template>
     <div class="cv-container">
         <transition-group name="fade">
-        <div class="event" v-for="event in cvEvents" :key="event">
+        <div class="event" v-for="event in cvEvents" :key="event.key">
         <h1 class="title"> {{event.data.cv.header}}</h1>
             <p class="entry" v-for="text in event.data.cv.text" :key="text">{{text}}</p>
         </div>

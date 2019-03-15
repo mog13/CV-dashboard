@@ -73,6 +73,11 @@
                     return event.time.year === vm.currentTime.year && event.time.month <= vm.currentTime.month;
                 });
             }
+        },
+        created:function () {
+            this.timelineData.events.forEach(e=>{
+                e.key = `${e.time.year}${e.time.month}`;
+            });
         }
 
     }

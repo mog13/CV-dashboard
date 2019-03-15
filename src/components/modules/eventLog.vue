@@ -2,7 +2,7 @@
     <div class="log-container">
         <div class="log">
             <transition-group name="slide-fade" style="width: 100%">
-            <div class="entry-container" v-for="entry in reversedEntried" :key="entry">
+            <div class="entry-container" v-for="entry in reversedEntried" :key="entry.key">
                 <div class="entry header"> <span class="name">{{entry.name}}</span> <span class="date"> - {{dateToString(entry.time)}}</span></div>
                 <div class="entry" v-for="log in entry.data.logs" :key="log">{{log}} </div>
             </div>
