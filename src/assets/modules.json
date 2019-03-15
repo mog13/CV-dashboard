@@ -31,6 +31,7 @@
       "width": "2",
       "data":{
         "links":[
+          {"name":"CV (PDF)","href":"https://mog13.github.io/CV-dashboard/public/resume.pdf"},
           {"name":"Source","href":"https://github.com/mog13/CV-dashboard"},
           {"name":"Github","href":"https://github.com/mog13"},
           {"name":"Codepen","href":"https://codepen.com/mog13"},

@@ -5,17 +5,19 @@
             <div><h1 class="title">Thank You</h1></div>
             <div><p class="explination">Hopefully you enjoyed my interactive CV. If you have any questions then please get in contact via the links provided.</p></div>
             <div><p class="explination">This project was created over a few days as a short term demonstration. Because of this there are several areas
-                that are weaker than i would normally like. There are no tests. Normally i would use Jest and Protractor to keep a thorough coverage (both unit and e2e)
-                Although somewhat responsive this experience has been made with desktops in mind. If I were to expand on this project i would revisit the charting library choice. </p></div>
+                that are weaker than i would normally like. There are no tests. Normally i would use Jest and Protractor to keep a thorough test coverage (both unit and e2e). For an example please see my public github project <a target="_blank" href="https://github.com/mog13/Splain">Splain</a>.
+            </p></div>
+
+            <div><p class="explination">Although somewhat responsive this experience has been made with desktops in mind. I believe however in a real world situation a mobile offering would need to present an almost completely different user experience which would be outside the scope of this project</p></div>
+            <a class="cvlink" href="https://mog13.github.io/CV-dashboard/public/resume.pdf" target="_blank"> see plain CV here</a>
+
             <div>
-                <div><p class="explination">
-                </p></div>
                 <button type="button" class="btn btn-success" v-on:click="close()">close</button>
             </div>
             <div>
                 <button type="button" class="btn btn-success" v-on:click="restart()">restart</button>
             </div>
-        </div>
+           </div>
     </div>
 </template>
 
@@ -51,6 +53,13 @@
     .btn-success {
         background-color: $module-accent;
         margin-bottom: 20px;
+    }
+    a{
+        color: $module-accent;
+    }
+    .cvlink {
+
+        margin-bottom:20px;
     }
 
     .blackout {
