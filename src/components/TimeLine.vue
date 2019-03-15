@@ -27,10 +27,9 @@
 <script>
     export default {
         name: "TimeLine",
-        props: ["events", "current"],
+        props: ["events", "current","started"],
         data: () => {
             return {
-                started: false
             }
         },
         methods: {
