@@ -34,6 +34,7 @@
     padding-left: 20px;
     padding-top: 10px;
     max-height:400px;
+    min-height: 400px;
     overflow-y: scroll;
     .title{
         font-size: 1.2rem;

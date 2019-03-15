@@ -71,6 +71,7 @@
         align-items: center;
         flex-direction: column;
         padding-top:5%;
-        opacity:1!important;
+        padding-bottom:5%;
+        overflow-y: scroll;
     }
 </style>

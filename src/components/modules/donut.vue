@@ -1,7 +1,7 @@
 <template>
     <div class="graphContainer">
         <div class="graphOuter">     </div>
-            <donut-chart class="donut" id="donut" :data="proccesedData" :formatter="addMonths" :colors="colours" resize="true" ></donut-chart>
+            <donut-chart class="donut" id="donut" :data="proccesedData" :formatter="addMonths" :colors="colours" :resize="true" ></donut-chart>
             <no-data v-if="proccesedData.length ===0"></no-data>
     </div>
 </template>
@@ -45,11 +45,17 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        width:100%;
         .graphOuter {
-            position:absolute;
+            position: absolute;
             background-color: $module-light;
             width: 90%;
             height: 90%;
+
         }
+    }
+    .donut {
+        width: 100%;
+        overflow: hidden;
     }
 </style>

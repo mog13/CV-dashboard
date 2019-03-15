@@ -1,7 +1,7 @@
 <template>
     <div class="graphContainer">
         <div class="graphSize">
-            <line-chart class="graph" id="line" :data="proccesedData" :hoverCallback="genLegend" :xkey="'year'" :labels="skills" :ykeys="skills" resize="true"></line-chart>
+            <line-chart class="graph" id="line" :data="proccesedData" :hoverCallback="genLegend" :xkey="'year'" :labels="skills" :ykeys="skills" :resize="true"></line-chart>
         </div>
         <no-data v-if="proccesedData.length ===0"></no-data>
     </div>
@@ -81,7 +81,7 @@
         align-items: center;
         .graphSize {
             background-color: $module-light;
-
+            width:100%;
         }
     }
 </style>

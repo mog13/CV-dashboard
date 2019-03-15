@@ -88,6 +88,6 @@
         align-items: center;
         flex-direction: column;
         padding-top: 5%;
-        opacity: 1 !important;
+        overflow-y: scroll;
     }
 </style>
