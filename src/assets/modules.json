@@ -31,11 +31,12 @@
       "width": "2",
       "data":{
         "links":[
-          {"name":"Source","href":"http://github.com/mog13"},
-          {"name":"Github","href":"http://github.com/mog13"},
-          {"name":"Codepen","href":"http://codepen.com/mog13"},
-          {"name":"Email","href":"mailto:MorganSpencerOwen@outlook.com"},
-          {"name":"phone","content":"01234 567890"}]
+          {"name":"Source","href":"https://github.com/mog13/CV-dashboard"},
+          {"name":"Github","href":"https://github.com/mog13"},
+          {"name":"Codepen","href":"https://codepen.com/mog13"},
+          {"name":"linkedin","href":"https://www.linkedin.com/in/morgan-owen-43899026/"},
+          {"name":"Email","href":"mailto:MorganSpencerOwen@outlook.com"}
+        ]
       }
     }
   ]

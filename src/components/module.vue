@@ -29,11 +29,10 @@
         data:()=>{
             return {
                 lightTargets:[{name:"GCSE'S",target:{label:"GCSE",param:"qualification"}},
-                    {name:"C&G1",target:{label:"ALEVEL",param:"qualification"}},
-                    {name:"C&G2",target:{label:"ALEVEL",param:"qualification"}},
+                    {name:"C&G1",target:{label:"CG",param:"qualification"}},
+                    {name:"C&G2",target:{label:"CG2",param:"qualification"}},
                     {name:"A levels",target:{label:"ALEVEL",param:"qualification"}},
-                    {name:"Degree",target:{label:"ALEVEL",param:"qualification"}},
-                    {name:"Masters",target:{label:"ALEVEL",param:"qualification"}}
+                    {name:"Masters",target:{label:"MASTERS",param:"qualification"}}
                     ]
             }
         },

@@ -20,7 +20,8 @@
           "2 at A*",
           "7 at A",
           "2 at B"
-        ]
+        ],
+        "qualification":"GCSE"
       }
     },
     {
@@ -32,7 +33,8 @@
       "data": {
         "logs": [
           "achieved distinction in 'Systems support - PC Maintenance'"
-        ]
+        ],
+        "qualification":"CG"
       }
     },
     {
@@ -44,7 +46,8 @@
       "data": {
         "logs": [
           "achieved a diploma with distinction in 'ICT Systems Support'"
-        ]
+        ],
+        "qualification":"CG2"
       }
     },
     {
@@ -81,7 +84,8 @@
         "logs": [
           "Achieved A in Maths",
           "Achieved B's in Computing and Physics"
-        ]
+        ],
+        "qualification":"ALEVEL"
       }
     },
     {
@@ -154,7 +158,8 @@
       "data": {
         "logs": [
           "Awarded a first class degree in Electronic and computer technology"
-        ]
+        ],
+        "qualification":"MASTERS"
       }
     },
     {
